@@ -26,7 +26,6 @@ import com.docker.atsea.service.ProductService;
 import com.docker.atsea.service.ProductServiceImpl;
 
 
-@SuppressWarnings("serial")
 @RunWith(SpringRunner.class)
 public class UnitTest {
 	@Mock
@@ -65,7 +64,7 @@ public class UnitTest {
 	
 	// Mock order
 	public Date orderDate = new Date(); 
-	private static Map<Integer, Integer> productsOrdered;
+	private static final Map<Integer, Integer> productsOrdered;
     static{
       productsOrdered =   new HashMap<Integer, Integer>() {{
             put(2, 4);

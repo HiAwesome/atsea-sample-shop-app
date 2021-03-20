@@ -51,9 +51,9 @@ public class Order implements Serializable {
     	this.orderDate = orderDate;
     	this.productsOrdered = productsOrdered;
     	this.customerId = customerId;
-    };
+    }
 
-	public Long getCustomerId() {
+    public Long getCustomerId() {
 		return customerId;
 	}
 	

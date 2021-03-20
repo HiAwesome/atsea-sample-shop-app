@@ -128,8 +128,8 @@ public class CustomerController {
 		customerInfo.put("customerId", currentCustomerId);
 
 		HttpHeaders headers = new HttpHeaders();
-		headers.setLocation(ucBuilder.path("/api/customer/{customerId").buildAndExpand(customer.getCustomerId()).toUri());;
-		return new ResponseEntity<JSONObject>(customerInfo, HttpStatus.CREATED);
+		headers.setLocation(ucBuilder.path("/api/customer/{customerId").buildAndExpand(customer.getCustomerId()).toUri());
+        return new ResponseEntity<JSONObject>(customerInfo, HttpStatus.CREATED);
 	}
 
 	// ------------------- Update a Customer ------------------------------------------------

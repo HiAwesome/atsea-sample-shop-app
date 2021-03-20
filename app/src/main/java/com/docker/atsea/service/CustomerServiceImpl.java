@@ -48,7 +48,7 @@ public class CustomerServiceImpl implements CustomerService {
 	}
 
 	public List<Customer> findAllCustomers() {
-		return (List<Customer>) customerRepository.findAll();
+		return customerRepository.findAll();
 	}
 	
 	public boolean customerExist(Customer customer) {

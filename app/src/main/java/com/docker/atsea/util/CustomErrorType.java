@@ -2,7 +2,7 @@ package com.docker.atsea.util;
 
 public class CustomErrorType {
 	
-    private String errorMessage;
+    private final String errorMessage;
 
     public CustomErrorType(String errorMessage){
         this.errorMessage = errorMessage;

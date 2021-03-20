@@ -48,6 +48,6 @@ public class OrderServiceImpl implements OrderService {
 	}
 
 	public List<Order> findAllOrders() {
-		return (List<Order>) orderRepository.findAll();
+		return orderRepository.findAll();
 	}	
 }
